@@ -1,0 +1,229 @@
+body {
+  background-color: #0d0d14; /* Negro profundo con matiz de fondo */
+  color: #ffffff;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Contenedor Principal de la Aplicación */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Títulos Principales de la Interfaz */
+.container h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px 0;
+}
+
+/* Subtítulo / Descripción del Mockup */
+.container .subtitle {
+  text-align: center;
+  color: #a2a2b5;
+  font-size: 14px;
+  margin: 0 0 35px 0;
+}
+
+/* Sección del Formulario - Grid de Inputs ajustado al Mockup */
+.form-section form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas idénticas */
+  gap: 16px 20px;
+  background-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* Contenedor Individual de cada Campo */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Estilos de las Etiquetas */
+.form-group label {
+  color: #e1e1e9;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Campos de Entrada (Inputs) */
+.form-group input {
+  background-color: #1b1b2a; /* Fondo oscuro de los inputs */
+  color: #ffffff;
+  border: 1px solid #2d2d44; /* Borde sutil */
+  border-radius: 6px;
+  padding: 11px 14px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+/* Marcadores de posición (Placeholders) */
+.form-group input::placeholder {
+  color: #565670;
+}
+
+/* Estado de Enfoque (Focus) */
+.form-group input:focus {
+  outline: none;
+  border-color: #8a2be2; /* Resplandor morado */
+  box-shadow: 0 0 8px rgba(138, 43, 226, 0.35);
+  background-color: #202032;
+}
+
+/* Contenedor del Botón Principal (Registrar / Actualizar) */
+.form-buttons {
+  grid-column: 1 / -1; /* Ocupa todo el ancho horizontal debajo */
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Botón de Registro (Modo Azul/Morado Eléctrico Elegante del Mockup) */
+.form-buttons button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #1d8cf8 0%,
+    #1164ff 100%
+  ); /* Azul/Morado brillante corporativo */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(29, 140, 248, 0.2);
+}
+
+.form-buttons button[type="submit"]:hover {
+  background: linear-gradient(135deg, #3598ff 0%, #1d72ff 100%);
+  box-shadow: 0 4px 16px rgba(29, 140, 248, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Botón Secundario de Cancelar Edición */
+.form-buttons button[type="button"] {
+  background-color: #262636;
+  color: #c0c0c0;
+  border: 1px solid #3d3d56;
+  border-radius: 6px;
+  padding: 13px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #323248;
+  color: #ffffff;
+}
+
+/* Sección de la Tabla de Registros */
+.table-section {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Estructura Base de la Tabla */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #141423; /* Bloque oscuro del contenedor de la tabla */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Encabezados de la Tabla */
+.table-section th {
+  background-color: #1b1b2f; /* Tono ligeramente más claro para la cabecera */
+  color: #9da0b7; /* Gris azulado del mockup */
+  font-size: 14px;
+  font-weight: 600;
+  padding: 16px 20px;
+  border-bottom: 1px solid #252538;
+}
+
+/* Celdas de Datos */
+.table-section td {
+  padding: 16px 20px;
+  color: #e2e2ec;
+  font-size: 14px;
+  border-bottom: 1px solid #1e1e32;
+  vertical-align: middle;
+}
+
+/* Fila con Efecto Hover */
+.table-section tbody tr:hover {
+  background-color: #1c1c30;
+}
+
+/* Estilos comunes de los Botones de Acción de la Tabla */
+.table-section td button {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Botón Editar (Verde del Mockup) */
+.table-section td button.btn-edit {
+  background-color: #2dce89;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.table-section td button.btn-edit:hover {
+  background-color: #24b978;
+  transform: translateY(-1px);
+}
+
+/* Botón Eliminar (Rojo del Mockup) */
+.table-section td button.btn-delete {
+  background-color: #f5365c;
+  color: #ffffff;
+}
+
+.table-section td button.btn-delete:hover {
+  background-color: #ec1c46;
+  transform: translateY(-1px);
+}
+
+/* Mensaje Informativo sin registros */
+.table-section p {
+  text-align: center;
+  color: #6c6c8c;
+  padding: 30px;
+  background-color: #141423;
+  border-radius: 8px;
+  margin: 0;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 1100px) {
+  .form-section form {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .form-section form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,8 @@
+# Variables de entorno (Seguridad)
+.env
+
+# Dependencias (No se suben porque son muy pesadas)
+node_modules/
+
+# Archivos de registro
+npm-debug.log
