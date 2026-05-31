@@ -52,13 +52,6 @@ npm install
 
 Crea una base de datos llamada `docentes_db` o ajusta las variables de entorno en un archivo `.env` dentro de `server/`:
 
-```env
-DB_HOST=localhost
-DB_USSER=root
-DB_PASSWORD=admin
-DB_NAME=docentes_db
-```
-
 > Nota: en `db.js` hay una variable de conexión `DB_USSER` que se usa para el usuario MySQL.
 
 3. Inicia el servidor backend:
